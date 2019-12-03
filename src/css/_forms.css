@@ -3,28 +3,6 @@ form {
   font-family: {{ secondary_font_family }};
 }
 
-.hs-button {
-  margin: 0;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: normal;
-  line-height: 1.1;
-  position: relative;
-  text-align: center;
-  transition: all 0.15s linear;
-  background-color: {{ form_button_color }};
-  border-color: {{ form_button_color }};
-  color: {{ form_button_text_color }};
-  border-radius: 6px;
-  border-style: solid;
-  border-width: 1px;
-  font-size: .92rem;
-  padding: 15px 53px;
-{# default "Get Free Widget" form (renders when no form is passed to the form HubL tag)
-  is an anchor (a.hs-button) rather than a real input, so it needs explcit css to avoid link styling #}
-  text-decoration: none;
-}
-
 .hs-button:hover, .hs-button:focus {
   background-color: {{ form_button_color_hover }};
   border-color: {{ form_button_color_hover }};
@@ -54,24 +32,6 @@ form {
 .hs-error-msgs label {
   margin-top: .5rem;
   color: {{ form_error_label_color }};
-}
-
-.hs-input {
-  display: inline-block;
-  width: 100%;
-  height: 58px;
-  padding: 9px 10px;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 22px;
-  color: {{ form_input_color }};
-  background-color: #ffffff;
-  border: 2px solid #D1D6DC;
-  box-sizing: border-box;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  border-radius: 3px;
 }
 
 .hs-input[type=checkbox],
