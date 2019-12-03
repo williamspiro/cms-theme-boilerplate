@@ -1,6 +1,8 @@
 form {
+  max-width: {{ form_max_width }};
   font-family: {{ secondary_font_family }};
 }
+
 .hs-button {
   margin: 0;
   cursor: pointer;
@@ -116,6 +118,11 @@ select[multiple].hs-input {
   height: inherit;
 }
 
+/* Force single column fields to full width inside of fieldsets */
+fieldset.form-columns-1 .hs-input:not([type=radio]):not([type=checkbox]) {
+  width: 100% !important;
+}
+
 input.hs-input.error,
 div.field.error input,
 div.field.error textarea,
@@ -130,7 +137,7 @@ div.field.error textarea:focus,
 div.field.error .chzn-choices:focus,
 textarea.hs-input.error:focus,
 select.hs-input.error:focus {
-  border-color: {{ form_error_focus_color }};
+  border-color: {{ form_error_focus_border_color }};
 }
 
 .actions {
@@ -164,6 +171,10 @@ select.hs-input.error:focus {
 .inputs-list > li + li {
   padding-top: 2px;
 }
+.inputs-list label > input,
+.inputs-list label > span {
+  vertical-align: middle;
+}
 
 ul.no-list {
   list-style: none;
@@ -185,9 +196,9 @@ ul.no-list {
 
 .hs-richtext {
   margin-bottom: 3px;
-  line-height: 24px;
-  font-size: 14px;
-  color: #33475b;
+  line-height: 1.2;
+  font-size: {{ body_font_size }};
+  color: {{ body_color }};
 }
 .hs-richtext hr {
   text-align: left;

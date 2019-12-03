@@ -31,7 +31,7 @@
     "name": "features",
     "label": "Features",
     "type": "text",
-    "occurrence": { "min": 1, "max": 50, "default": 4},
+    "occurrence": { "min": 1, "max": 50, "default": 4 },
     "default": [
       "10 users included",
       "2 GB of storage",
@@ -52,18 +52,6 @@
     "type": "text"
   },
   {
-    "id": "field-6",
-    "default": "secondary",
-    "label": "Button type",
-    "locked": false,
-    "name": "button_type",
-    "required": false,
-    "type": "choice",
-    "display": "radio",
-    "choices" : [ [ "primary", "Primary" ], [ "secondary", "Secondary" ] ]
-  },
-  {
-    "id": "field-7",
     "type": "icon",
     "label": "Features list icon bullet",
     "name": "feature_icon",
@@ -96,7 +84,7 @@
     "name": "button_text_color",
     "label": "Button text color",
     "default": {
-      "color":"#ffffff",
+      "color": "#ffffff",
       "opacity": 100
     }
   }
