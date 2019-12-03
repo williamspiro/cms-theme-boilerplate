@@ -12,7 +12,7 @@ You can find the demo site at [boilerplate.hubspotcms.com](https://boilerplate.h
 
 Follow and star the repository to stay up-to-date with product releases and evolving best practices for building websites on the HubSpot CMS through PRs of the boilerplate.
 
-## Getting started
+## Getting started 
 
 The HubSpot CMS boilerplate is designed to work with both [local development](https://designers.hubspot.com/docs/tools/local-development) and the HubSpot Design Tools. To get started, you will need to have [Node.js](https://nodejs.org) installed. When getting started, we strongly suggest that you set up a [HubSpot CMS Developer Sandbox](https://offers.hubspot.com/free-cms-developer-sandbox). 
 
