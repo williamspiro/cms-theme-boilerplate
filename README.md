@@ -1,5 +1,5 @@
 HubSpot CMS Boilerplate
-=======================
+======================= 
  
 A straight-forward starting point for building a great website on the HubSpot CMS.
 
